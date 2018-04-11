@@ -38,6 +38,11 @@ Permission to waive conditions of this license may be requested from Windy Road 
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
+            <xs:attribute name="duration" type="xs:decimal" use="optional">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">Time taken (in seconds) to execute all testsuites</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
 		</xs:complexType>
 	</xs:element>
 	<xs:complexType name="testsuite">
